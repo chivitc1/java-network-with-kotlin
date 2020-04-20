@@ -1,0 +1,5 @@
+keytool -genkey -alias example.com -keyalg RSA -keystore exampleKeyStore.jks -keysize 2048
+
+keytool -certreq -alias example.com -keystore exampleKeyStore.jks -file server.crt
+
+keytool -delete -alias example.com -keystore exampleKeyStore.jks
